@@ -160,7 +160,8 @@
 
     .team-grid { display: flex; flex-wrap: wrap; gap: 1rem; }
     .team-card { background: var(--card); border: 1px solid var(--border); border-radius: 10px; padding: 1rem 1.25rem; display: flex; align-items: center; gap: .85rem; flex: 1; min-width: 200px; }
-    .team-avatar { width: 42px; height: 42px; border-radius: 50%; background: var(--green-dim); display: grid; place-items: center; font-family: 'Syne', sans-serif; font-weight: 800; font-size: .9rem; color: var(--green); flex-shrink: 0; }
+    .team-avatar { width: 42px; height: 42px; border-radius: 50%; background: var(--green-dim); display: grid; place-items: center; font-family: 'Syne', sans-serif; font-weight: 800; font-size: .9rem; color: var(--green); flex-shrink: 0; overflow: hidden; }
+    .team-avatar img { width: 100%; height: 100%; object-fit: cover; border-radius: 50%; }
     .team-name { font-size: .9rem; color: var(--white); font-weight: 500; }
     .team-role { font-size: .75rem; color: var(--text-3); }
 
@@ -287,25 +288,31 @@
     <div class="team-grid">
 
       <div class="team-card">
-        <div class="team-avatar"><!-- ✏️ Iniciales --></div>
+        <div class="team-avatar">
+          <img src="src/imagenes/avatar.png" alt="Foto de perfil">
+        </div>
         <div>
-          <div class="team-name"><!-- ✏️ Nombre completo --></div>
+          <div class="team-name">JUAN MARCOS HERNÁNDEZ RODRIGUEZ</div>
           <div class="team-role"><!-- ✏️ Rol en el proyecto --></div>
         </div>
       </div>
 
       <div class="team-card">
-        <div class="team-avatar"><!-- ✏️ Iniciales --></div>
+        <div class="team-avatar">
+          <img src="src/imagenes/jesus.jpg" alt="Foto de perfil de Jesus Alcalá">
+        </div>
         <div>
-          <div class="team-name"><!-- ✏️ Nombre completo --></div>
+          <div class="team-name">JESUS ALCALÁ HERNÁNDEZ</div>
           <div class="team-role"><!-- ✏️ Rol en el proyecto --></div>
         </div>
       </div>
 
       <div class="team-card">
-        <div class="team-avatar"><!-- ✏️ Iniciales --></div>
+        <div class="team-avatar">
+          <img src="src/imagenes/avatar.png" alt="Foto de perfil de Juan Angel">
+        </div>
         <div>
-          <div class="team-name"><!-- ✏️ Nombre completo --></div>
+          <div class="team-name">JUAN ANGEL NARVAEZ REYES</div>
           <div class="team-role"><!-- ✏️ Rol en el proyecto --></div>
         </div>
       </div>
